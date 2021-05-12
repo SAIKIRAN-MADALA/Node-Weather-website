@@ -20,7 +20,7 @@ weatherform.addEventListener('submit',(e)=>{
 	response.json().then((data)=>{
 		if (data.error){
 
-			Weather_Data.textContent="Apologies we are unable to find the requested location " + data.error
+			location_data.textContent="Apologies we are unable to find the requested location " + data.error
 		}
 		else{
 			location_data.textContent= data.Location;
