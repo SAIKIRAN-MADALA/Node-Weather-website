@@ -16,7 +16,7 @@ weatherform.addEventListener('submit',(e)=>{
 	location_data.textContent = "Your request is being processed please wait ........................."
 	Weather_Data.textContent=""
 
-	fetch('/Weather?address='+location).then((response)=>{
+	fetch('/weather?address='+location).then((response)=>{
 	response.json().then((data)=>{
 		if (data.error){
 
